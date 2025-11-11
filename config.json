@@ -1,0 +1,28 @@
+{
+  "neurogarden": {
+    "version": "1.0.0",
+    "author": "mwasifanwar",
+    "eeg": {
+      "simulationMode": true,
+      "updateInterval": 100,
+      "sensitivity": 1.0
+    },
+    "ecosystem": {
+      "maxLifeForms": 100,
+      "initialLifeForms": 3,
+      "energyDecayRate": 0.01,
+      "mutationRate": 0.1
+    },
+    "rendering": {
+      "quality": "high",
+      "shadows": true,
+      "particles": true,
+      "fog": true
+    },
+    "performance": {
+      "targetFPS": 60,
+      "culling": true,
+      "lod": true
+    }
+  }
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #00ff00;
+    overflow: hidden;
+}
+
+#neuroContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+#header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#header p {
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+#controlPanel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #00ff00;
+}
+
+button {
+    background: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #00cc00;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+#status {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#statsPanel {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #00ff00;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    min-width: 150px;
+}
+
+.value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#neuroCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#infoPanel {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #00ff00;
+    max-width: 300px;
+}
+
+#infoPanel h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 5px;
+}
+
+#currentState {
+    font-size: 0.9em;
+    line-height: 1.4;
+}

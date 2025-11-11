@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroGarden - mwasifanwar</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="neuroContainer">
+        <div id="header">
+            <h1>NeuroGarden</h1>
+            <p>Brain-Controlled Virtual Ecosystem</p>
+        </div>
+        
+        <div id="controlPanel">
+            <button id="connectBtn">Connect EEG</button>
+            <button id="startBtn" disabled>Start Ecosystem</button>
+            <button id="resetBtn">Reset</button>
+            <div id="status">Disconnected</div>
+        </div>
+
+        <div id="statsPanel">
+            <div class="stat">
+                <span>Focus Level:</span>
+                <div id="focusLevel" class="value">0%</div>
+            </div>
+            <div class="stat">
+                <span>Meditation:</span>
+                <div id="meditationLevel" class="value">0%</div>
+            </div>
+            <div class="stat">
+                <span>Life Forms:</span>
+                <div id="lifeFormCount" class="value">0</div>
+            </div>
+            <div class="stat">
+                <span>Ecosystem Age:</span>
+                <div id="ecosystemAge" class="value">0s</div>
+            </div>
+        </div>
+
+        <canvas id="neuroCanvas"></canvas>
+        
+        <div id="infoPanel">
+            <h3>Current State</h3>
+            <div id="currentState">Waiting for brainwave input...</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="scripts/eegProcessor.js"></script>
+    <script src="scripts/lifeforms.js"></script>
+    <script src="scripts/ecosystem.js"></script>
+    <script src="scripts/renderer.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
